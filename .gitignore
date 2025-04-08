@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.streamlit/
+firebase-credentials.json
+.env
+.ipynb_checkpoints
+.DS_Store
+.vscode/

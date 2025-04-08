@@ -1,0 +1,5 @@
+streamlit
+firebase-admin
+streamlit-folium
+folium
+python-dotenv
