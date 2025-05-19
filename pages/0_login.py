@@ -1,6 +1,6 @@
 import streamlit as st
 from firebase.firebase_client import login, logout, is_authenticated, get_user
-from firebase.firebase_config import init_firebase
+from firebase.firebase_config import init_firebase, is_firebase_initialized
 from services.ponto_service import PontoService
 from config import TIPOS_PONTOS
 import folium
@@ -13,8 +13,11 @@ st.set_page_config(
     layout="wide"
 )
 
+# Inicializa o Firebase apenas se ainda não estiver inicializado
+if not is_firebase_initialized():
+    init_firebase()
+
 # Inicializa serviços
-init_firebase()
 ponto_service = PontoService()
 
 def show_login_form():
@@ -133,4 +136,4 @@ def show_logout():
 if is_authenticated():
     show_logout()
 else:
-    show_login_form() 
+    show_login_form()

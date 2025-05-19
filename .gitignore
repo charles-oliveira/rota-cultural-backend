@@ -1,11 +1,11 @@
-# Arquivos de ambiente
-.env
-.env.local
-.env.*.local
+# # Arquivos de ambiente
+# .env
+# .env.local
+# .env.*.local
 
-# Credenciais do Firebase
-firebase/serviceAccountKey.json
-firebase-credentials.json
+# # Credenciais do Firebase
+# firebase/serviceAccountKey.json
+# firebase-credentials.json
 
 # Python
 __pycache__/
